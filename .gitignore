@@ -1,0 +1,8 @@
+*.suo
+*.user
+*.js
+*.js.map
+bin
+obj
+References
+AssemblyInfo.cs
