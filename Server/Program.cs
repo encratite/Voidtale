@@ -1,4 +1,4 @@
-﻿namespace Server
+﻿namespace Voidtale
 {
 	class Program
 	{
