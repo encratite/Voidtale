@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{8D3BF2E8-F0AB-4EC5-BD6A-C7B2D56BBF77}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0C94DA55-DFD1-45DE-A2F6-8CD8B6E659B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerTest", "TimerTest\TimerTest.csproj", "{3A043B5E-043A-429A-983F-0D677F7185D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +17,15 @@ Global
 		{8D3BF2E8-F0AB-4EC5-BD6A-C7B2D56BBF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D3BF2E8-F0AB-4EC5-BD6A-C7B2D56BBF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D3BF2E8-F0AB-4EC5-BD6A-C7B2D56BBF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A043B5E-043A-429A-983F-0D677F7185D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A043B5E-043A-429A-983F-0D677F7185D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A043B5E-043A-429A-983F-0D677F7185D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A043B5E-043A-429A-983F-0D677F7185D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A043B5E-043A-429A-983F-0D677F7185D9} = {0C94DA55-DFD1-45DE-A2F6-8CD8B6E659B5}
 	EndGlobalSection
 EndGlobal

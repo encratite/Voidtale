@@ -2,8 +2,8 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Server")]
-[assembly: AssemblyDescription("CanvasQueste - Server")]
+[assembly: AssemblyTitle("TimerTest")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]
@@ -13,6 +13,6 @@ using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("5d67773e-bf74-4853-a335-4dc915a101f6")]
+[assembly: Guid("aa7f2367-5631-463b-914a-72191ac94a73")]
 
 [assembly: AssemblyVersion("0.0.0.0")]
