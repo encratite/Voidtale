@@ -1,0 +1,16 @@
+Each character class comes with a small number of skills that are gradually unlocked as the character gains levels.
+A new skill is unlocked at the following levels:
+1, 2, 4, 6, 9, 12, 16, 20 (8 skills in total per class)
+They are bound to the keys QWER and ASDF by default.
+The power of skills scales automatically with levels.
+The four final skills also require training to be learned and do not become available automatically as the required level is gained.
+
+Characters do not possess anything like Diablo II style strength/dexterity/vitality/energy attributes.
+There is no choice in specialisation as a character gains levels.
+However, I might add something like a talent tree that modifies skills slightly later on.
+
+The following item slots are available on each character:
+
+Weapon     Helmet
+Jewelry    Chest armour
+Gloves     Boots
