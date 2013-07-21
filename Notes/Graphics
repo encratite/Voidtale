@@ -1,0 +1,33 @@
+Let's have a look at the current Steam Hardware Survey Stats to figure out what resolutions should be supported:
+
+http://store.steampowered.com/hwsurvey/
+
+(Resolution, market share, inner browser aspect ratio)
+1920 x 1080, 32%, 2.06
+1366 x 768, 21%, 2.21
+1280 x 1024, 8%, 1.46
+1680 x 1050, 8%, 1.87
+1600 x 900, 8%, 2.13
+
+These five resolutions already cover like 77% of the market.
+
+In my more extreme case the vertical resolution loss to the taskbar and such is 1080 px - 878 px = 202 px
+Overall the minimum is 1280 px in width and 768 px in width, prior to waste.
+One measurement of a real life 1366 x 768 example showed an inner browser height of 629 px, with a waste of only 139 px.
+On my notebook it's even only 602 px, 166 px wasted.
+
+That's approximately 1280 x 600 permissible.
+Minus 40 for each dimension to get a bit of space at the edges, 1240 x 560.
+Another 40 for the scrollbar on the right side and we're at 1200.
+
+A game resolution of 1200 x 560 should work on a wide range of systems.
+
+Or I could go for a 2 : 1 aspect ratio layout and simply use higher resolution textures that are scaled for everything.
+Only the aspect ratios of the textures would matter then.
+However, it would be difficult to get a seamless look then.
+It might be possible with one big texture for most of the GUI.
+The 2.0 aspect ratio is terrible for the 1280 x 1024 one, though.
+
+1080p graphics are probably a bit too heavy for a browser game.
+1600 x 800 might be a decent format to optimise the sources for.
+That aspect ratio might seem odd but it's more suited for the aspect rati of what's usually visible in a brwoser.
