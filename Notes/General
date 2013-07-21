@@ -11,6 +11,66 @@ However, I might add something like a talent tree that modifies skills slightly 
 
 The following item slots are available on each character:
 
-Weapon     Helmet
-Jewelry    Chest armour
+Weapon     Helm
+Jewelry    Armour
 Gloves     Boots
+
+There is one general type of protection from damage called "defence" which works against all types of damage.
+Additionally there are damage-specific types of "resistance".
+The damage factor is calculated as follows:
+
+protection = defence + resistance
+damageFactor = 1 - protection / (protection + 100)
+
+This is based on the formula used in League of Legends.
+The general damage reduction and damage type specific reduction were influenced by Diablo III.
+The damage types are similar to those of Diablo II:
+
+1. Physical
+2. Fire
+3. Lightning
+4. Cold
+5. Poison
+
+There is also a flat damage reduction stat called "block".
+It's applied after the reduction by defence and resistance, so it's possible to reduce damage taken to zero.
+
+Defensive stats are proportionally distributed like this:
+
+Helm      20%
+Armour    40%
+Gloves    20%
+Boots     20%
+
+Weapons and jewelry do not possess base defensive stats.
+
+The damage of skills generally scales with both the level of the character and damage stats obtained from items.
+The effective level for a skill can be further modified by skill level bonuses granted by special class-specific items.
+
+skillLevel = characterLevel + itemSkillLevelBonus
+itemDamage = random(weaponMinimumDamage, weaponMaximumDamage) + itemDamageTypeBonus
+skillDamage = skillBaseDamage + skillLevelFactor * skillLevel + skillDamageFactor * itemDamage
+
+Weapons do not only possess a minimum damage and a maximum damage stat but also a base attack speed stat that affects the casting speed and cooldown time of offensive skills.
+
+Very slow   0.8
+Slow        0.9
+Normal      1.0
+Fast        1.1
+Very fast   1.2
+
+cooldownFactor = 1 / baseAttackSpeed
+
+However, the mana cost does not scale with this so slower weapons are basically more mana effective in this model.
+Perhaps this could be balanced for by granting faster weapons slightly more DPS.
+
+The experience of a character is reset to zero after a level is gained.
+When a character dies to NPCs, it loses up to 30% of the experience required to gain the next level, back down to a minimum of zero.
+
+experienceForLevel = 50 * level * (level - 1)
+
+Samples:
+
+[0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500, 6600, 7800, 9100, 10500, 12000, 13600, 15300, 17100, 19000]
+
+Note that this is not total experience for each level.
