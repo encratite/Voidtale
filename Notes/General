@@ -29,13 +29,13 @@ The damage types are similar to those of Diablo II:
 1. Physical
 2. Fire
 3. Lightning
-4. Cold
+4. Frost
 5. Poison
 
 There is also a flat damage reduction stat called "block".
 It's applied after the reduction by defence and resistance, so it's possible to reduce damage taken to zero.
 
-Defensive stats are proportionally distributed like this:
+Defensive stats are generally distributed like this:
 
 Helm      20%
 Armour    40%
@@ -64,6 +64,13 @@ cooldownFactor = 1 / baseAttackSpeed
 However, the mana cost does not scale with this so slower weapons are basically more mana effective in this model.
 Perhaps this could be balanced for by granting faster weapons slightly more DPS.
 
+Each skill has the following properties:
+
+1. Mana cost
+2. Cast time
+3. Cooldown time
+4. Effects
+
 The experience of a character is reset to zero after a level is gained.
 When a character dies to NPCs, it loses up to 30% of the experience required to gain the next level, back down to a minimum of zero.
 
@@ -74,3 +81,10 @@ Samples:
 [0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500, 6600, 7800, 9100, 10500, 12000, 13600, 15300, 17100, 19000]
 
 Note that this is not total experience for each level.
+
+Entering a new tile takes time and can also be interrupted.
+This time can be reduced by movement speed bonuses granted by boots and possibly also some other special items.
+The initial movement speed of a character is 1.
+
+movementSpeed = min(1 + itemMovementSpeedBonus + skillMovementSpeedBonus, 5)
+movementDelay = (2 - 0.3 * movementSpeed) seconds
