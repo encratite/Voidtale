@@ -30,4 +30,8 @@ The 2.0 aspect ratio is terrible for the 1280 x 1024 one, though.
 
 1080p graphics are probably a bit too heavy for a browser game.
 1600 x 800 might be a decent format to optimise the sources for.
-That aspect ratio might seem odd but it's more suited for the aspect rati of what's usually visible in a brwoser.
+That aspect ratio might seem odd but it's more suited for the aspect rati of what's usually visible in a browser.
+
+Now that I ran some tests I'm actually going with a more dynamic approach after all.
+All the windows will have a fixed size and will be drawn dynamically along the edge of the screen.
+The center will be occupied by a map and on larger resolutions it will simply show more of the map without actually scaling any of the components.
