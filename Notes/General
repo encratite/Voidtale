@@ -51,15 +51,16 @@ skillLevel = characterLevel + itemSkillLevelBonus
 itemDamage = random(weaponMinimumDamage, weaponMaximumDamage) + itemDamageTypeBonus
 skillDamage = skillBaseDamage + skillLevelFactor * skillLevel + skillDamageFactor * itemDamage
 
-Weapons do not only possess a minimum damage and a maximum damage stat but also a base attack speed stat that affects the casting speed and cooldown time of offensive skills.
+Weapons do not only possess a minimum damage and a maximum damage stat but also a base attack speed stat that affects the casting speed and cooldown time of skills.
 
-Very slow   0.8
-Slow        0.9
-Normal      1.0
-Fast        1.1
-Very fast   1.2
+Very slow   6
+Slow        7
+Normal      8
+Fast        9
+Very fast   10
 
-cooldownFactor = 1 / baseAttackSpeed
+effectiveAttackSpeed = baseAttackSpeed + itemAttackSpeedBonus + skillAttackSpeedBonus
+cooldownFactor = 8 / effectiveAttackSpeed
 
 However, the mana cost does not scale with this so slower weapons are basically more mana effective in this model.
 Perhaps this could be balanced for by granting faster weapons slightly more DPS.
@@ -97,6 +98,15 @@ experienceForLevel = 100 * round(1 + level^1.6)
 
 Note that this is not the total experience required to gain that level, but just the step from one level to the next one.
 It assumes that one regular monster is worth about 10 experience points.
+
+Level difference between the monster and the character, experience factor
+-4 or lower, 0%
+-3, 25%
+-2, 50%
+-1, 75%
+0, 100%
++1, 125%
++2 or more, 150%
 
 Entering a new tile takes time and can also be interrupted.
 This time can be reduced by movement speed bonuses granted by boots and possibly also some other special items.
