@@ -24,13 +24,13 @@ damageFactor = 1 - protection / (protection + 100)
 
 This is based on the formula used in League of Legends.
 The general damage reduction and damage type specific reduction were influenced by Diablo III.
-The damage types are similar to those of Diablo II:
+The damage types are a mix of WoW and Sacred:
 
-1. Physical
-2. Fire
-3. Lightning
-4. Frost
-5. Poison
+Physical
+Fire
+Frost
+Nature
+Void
 
 There is also a flat damage reduction stat called "block".
 It's applied after the reduction by defence and resistance, so it's possible to reduce damage taken to zero.
@@ -74,13 +74,29 @@ Each skill has the following properties:
 The experience of a character is reset to zero after a level is gained.
 When a character dies to NPCs, it loses up to 30% of the experience required to gain the next level, back down to a minimum of zero.
 
-experienceForLevel = 50 * level * (level - 1)
+Experience for level considerations:
 
-Samples:
+f(n) = a + n^b
+f(2) = 10
+f(20) = 1000
 
-[0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500, 6600, 7800, 9100, 10500, 12000, 13600, 15300, 17100, 19000]
+y_1 = a + x_1^b
+<=> a = y_1 - x_1^b
 
-Note that this is not total experience for each level.
+y_2 = a + x_2^b
+<=> y_2 = y_1 - x_1^b + x_2^b
+<=> y_2 - y_1 = x_2^b - x_1^b
+
+b ~= 2.3 seems a bit high
+
+This one seems to work decently:
+
+experienceForLevel = 100 * round(1 + level^1.6)
+
+[0, 100, 200, 400, 600, 1000, 1400, 1800, 2300, 2800, 3400, 4000, 4700, 5400, 6100, 6900, 7700, 8500, 9400, 10200]
+
+Note that this is not the total experience required to gain that level, but just the step from one level to the next one.
+It assumes that one regular monster is worth about 10 experience points.
 
 Entering a new tile takes time and can also be interrupted.
 This time can be reduced by movement speed bonuses granted by boots and possibly also some other special items.
