@@ -1,24 +1,39 @@
 Ascetic
-Portrait: Starving monk figure
-Damage types: Void
-Class weapon: Ceremonial Dagger
 
-Smite, fast attack
-Fervour, slow attack
-Meditate, regenerate life over time, grants a defence bonus
-Seed of Doubt, damage and temporarily lower void resistance
+	Portrait: Starving monk figure
+	Damage types: Void
+	Class weapon: Ceremonial Dagger
 
-Devotion, damage one primary target and two more adjacent targets
-Judge, causes damage equal to a fraction of the target's current life
-Fast, take damage equal to a fraction of one's maximum life and gain temporary damage bonus, stacks up to three times
-Enlightenment, damage all enemies and grant a temporary damage bonus to all allies
+	Damage: 0 + 10/level
+	Health: 100 + 50/level
+	Mana: 25 + 25/level
+
+	Smite, fast attack
+	Fervour, slow attack
+	Meditate, regenerate life over time, grants a defence bonus
+	Seed of Doubt, damage and temporarily lower void resistance
+
+	Devotion, damage one primary target and two more adjacent targets
+	Judge, causes damage equal to a fraction of the target's current life
+	Fast, take damage equal to a fraction of one's maximum life and gain temporary damage bonus, stacks up to three times
+	Emptiness, damage all enemies and grant a temporary damage bonus to all allies
 
 Arachnid
-Portrait: Spider
-Damage types: Nature
-Class weapon: Fangs
+
+	Portrait: Spider
+	Damage types: Nature
+	Class weapon: Fangs
+
+	Damage: 0 + 12/level
+	Health: 80 + 45/level
+	Mana: 25 + 30/level
 
 Marauder
-Portrait: Armoured soldier with a two-handed weapon
-Damage types: Physical, Fire
-Class weapon: War Hammer
+
+	Portrait: Armoured soldier with a two-handed weapon
+	Damage types: Physical, Fire
+	Class weapon: War Hammer
+
+	Damage: 0 + 9/level
+	Health: 100 + 60/level
+	Mana: 20 + 20/level

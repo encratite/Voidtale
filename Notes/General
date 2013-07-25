@@ -50,7 +50,8 @@ Armour    40%
 Gloves    20%
 Boots     20%
 
-Weapons and jewelry do not possess base defensive stats.
+Weapons, jewelry and flasks do not possess base defensive stats.
+Protection and resistances of all characters are zero by default and are not automatically increased as levels are gained.
 
 The damage of skills generally scales with both the level of the character and damage stats obtained from items.
 The effective level for a skill can be further modified by skill level bonuses granted by special class-specific items.
