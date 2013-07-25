@@ -56,9 +56,8 @@ Protection and resistances of all characters are zero by default and are not aut
 The damage of skills generally scales with both the level of the character and damage stats obtained from items.
 The effective level for a skill can be further modified by skill level bonuses granted by special class-specific items.
 
-skillLevel = characterLevel + itemSkillLevelBonus
 itemDamage = random(weaponMinimumDamage, weaponMaximumDamage) + itemDamageTypeBonus
-skillDamage = skillBaseDamage + skillLevelFactor * skillLevel + skillDamageFactor * itemDamage
+skillDamage = skillBaseDamage + skillDamageFactor * itemDamage
 
 Weapons do not only possess a minimum damage and a maximum damage stat but also a base attack speed stat that affects the casting speed and cooldown time of skills.
 
@@ -73,6 +72,8 @@ cooldownFactor = 8 / effectiveAttackSpeed
 
 However, the mana cost does not scale with this so slower weapons are basically more mana effective in this model.
 Perhaps this could be balanced for by granting faster weapons slightly more DPS.
+
+All characters have a base damage of zero and do not automatically gain more damage by gaining levels.
 
 Each skill has the following properties:
 

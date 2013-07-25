@@ -2,9 +2,29 @@ Aiming for 150 base defence on items at level 20, we end up with 60 for the armo
 Let's stick to about 5 items per category in the beginning, although not for the weapons.
 The level requirements are 1, 5, 9, 13, 17.
 
+About 50% of the DPS is supposed to come from weapon base stats.
+Approximately 10 + 5 * (level - 1) damage.
+
 Weapon
+------
+
+Club, 2-8 damage, fast, level 1
+Dagger, 10-16 damage, very fast, level 2
+Axe, 17-23 damage, normal, level 3
+Spear, 24-44 damage, slow, level 5
+Short Sword, 29-43 damage, fast, level 7
+Morning Star, 42-58 damage, normal, level 9
+War Axe, 59-101, slow, level 12
+Flail, 56-115, slow, level 14
+Pike, 83-144 very slow, level 16
+Two-Handed Sword, 88-129, slow, level 18
+
 Jewelry
+-------
+
+
 Flask
+-----
 
 Helm
 ----

@@ -4,7 +4,6 @@ Ascetic
 	Damage types: Void
 	Class weapon: Ceremonial Dagger
 
-	Damage: 0 + 10/level
 	Health: 100 + 50/level
 	Mana: 25 + 25/level
 
@@ -24,7 +23,6 @@ Arachnid
 	Damage types: Nature
 	Class weapon: Fangs
 
-	Damage: 0 + 12/level
 	Health: 80 + 45/level
 	Mana: 25 + 30/level
 
@@ -34,6 +32,5 @@ Marauder
 	Damage types: Physical, Fire
 	Class weapon: War Hammer
 
-	Damage: 0 + 9/level
 	Health: 100 + 60/level
 	Mana: 20 + 20/level
