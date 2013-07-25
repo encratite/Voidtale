@@ -5,10 +5,14 @@ The level requirements are 1, 5, 9, 13, 17.
 About 50% of the DPS is supposed to come from weapon base stats.
 Approximately 10 + 5 * (level - 1) damage.
 
+Flasks have a capacity of 40 charges and use 10 charges on activation by default.
+Each charge is supposed to heal about 30% of the maximum life/mana.
+That means (50 + 25 * (level - 1)) * 0.3 life and (25 + 20 * (level - 1)) * 0.3 mana.
+
 Weapon
 ------
 
-Club, 2-8 damage, fast, level 1
+Club, 5-13 damage, fast, level 1
 Dagger, 10-16 damage, very fast, level 2
 Axe, 17-23 damage, normal, level 3
 Spear, 24-44 damage, slow, level 5
@@ -19,12 +23,28 @@ Flail, 56-115, slow, level 14
 Pike, 83-144 very slow, level 16
 Two-Handed Sword, 88-129, slow, level 18
 
+Ceremonial Dagger (Ascetic class weapon)
+----------------------------------------
+
+Kris, 30-42 damage, very fast, level 8
+Phurpa, 49-64 damage, very fast, level 13
+Void Blade, 60-92 damage, very fast, level 18
+
 Jewelry
 -------
 
+Ring, level 1, two icons
+Amulet, level 1, three icons
 
 Flask
 -----
+
+Vial, 15 life/10 mana per charge, level 1
+Potion, 40 life/25 mana per charge, level 4
+Great Potion, 60 life/45 mana per charge, level 7
+Flask, 80 life/60 mana per charge, level 10
+Great Flask, 105 life/80 mana per charge, level 13
+Elixir, 130 life/100 mana per charge, level 16
 
 Helm
 ----
