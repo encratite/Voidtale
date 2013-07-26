@@ -11,13 +11,12 @@ However, I might add something like a talent tree that modifies skills slightly 
 
 The following item slots are available on each character:
 
-Weapon
-Jewelry
-Flask
-Helm
-Armour
-Gloves
-Boots
+Weapon (0)     Helm   (2)    Jewelry (5)
+Gloves (1)     Armour (3)    Flask (6)
+               Boots  (4)
+
+The digits indicate the index in the array they are stored in.
+Although, I might not even do it that way, don't know yet.
 
 The flask is a Path of Exile style potion replacement that can be replenished at an NPC in town or by slaying monsters.
 A flask deals with both health and mana but uses the same charge to provide one type at a time.
