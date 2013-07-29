@@ -55,12 +55,12 @@ Helm: 18 defence, level 9
 Full Helm: 23 defence, level 13
 Great Helm: 30 defence, level 17
 
-Armour
-------
+Chest Armour
+------------
 
 Cloak: 8 defence, level 1
 Leather Armour: 18 defence, level 4
-Ring Mail: 30 defence, level 7
+Scale Mail: 30 defence, level 7
 Chain Mail: 40 defence, level 10
 Breast Plate: 51 defence, level 13
 Plate Mail: 62 defence, level 17
@@ -80,5 +80,5 @@ Boots
 Boots: 6 defence, level 1
 Heavy Boots: 12 defence, level 5
 Chain Boots: 17 defence, level 9
-Light Plated Boots: 24 defence, level 13
+Plated Boots: 24 defence, level 13
 Greaves: 32 defence, level 18
